@@ -7,7 +7,7 @@ function CountDisplay({count}){
                     ?
                 (
                     <h2>
-                        Counter: <span className="fs-1 fw-bold text-primary">{count}</span>
+                        Counter: <span className="fs-1 fw-bold text-success">{count}</span>
                     </h2>
                 )
                     :

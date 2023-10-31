@@ -36,7 +36,7 @@ function Counter(){
                     {
                         counter > 5 
                             ?
-                        (<h1 className="text-primary fw-bold">Congratulations!</h1>)
+                        (<h1 className="text-success fw-bold">Congratulations!</h1>)
                             : 
                         (<h1 className="text-danger fw-bold">Not yet</h1>)
                     }
