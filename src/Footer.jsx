@@ -1,8 +1,8 @@
-function Footer() {
+function Footer({copyright}) {
 
     return(
-    <footer>
-        Copyright 2023 © De Vega, Jennifer. All rights Reserved.
+      <footer className="container-fluid badge bg-primary text-center fs-6 mt-3">
+       {copyright}
       </footer>
     )
 

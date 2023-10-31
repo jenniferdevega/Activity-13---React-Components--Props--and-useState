@@ -1,51 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './css/App.css'
-import Header from './Header.jsx'
-import Counter from './Counter.jsx'
-import Footer from './Footer.jsx'
+import { useState } from 'react';
+import './css/App.css';
+import Header from './Header.jsx';
+import Counter from './Counter.jsx';
+import Footer from './Footer.jsx';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
 
 function App() {
 
   // const [variableName, functionName] = useState();
 
-  const [name, setName] = useState("Eper");
+  // const [name, setName] = useState("Eper");
 
-  const [counter, setCounter] = useState(0);
+  // const [counter, setCounter] = useState(0);
+
+  const [title, setTitle] = useState("Activity 13 - React Components, Props, and useState");
+
+  const [copyright, setCopyright] = useState("Copyright 2023 © De Vega, Jennifer. All rights Reserved.");
 
   return (
     <>
-      <Header />
+      <Header title={title}/>
       <Counter />
-      <Footer />
-
-      <h1>Hello {name}!</h1>
-      <h2>{counter}</h2>
-      <button onClick={
-        ()=>{
-          setCounter(counter + 1);
-        }
-      }>
-        Click Me!
-      </button>
-      {
-        counter > 10 ? (<h1 style={{color:"green"}}>Congratulations</h1>) : (<h1>Not yet</h1>)
-      }
-
-      <button onClick={
-        () => {
-          setName("Bryl");
-        }
-      }>
-        Change Name
-      </button>
-
-      <input type="text" onChange={
-        (e) => {
-          setName(e.target.value);
-        }
-      }/>
+      <Footer copyright={copyright}/>
     </>
   )
 }
