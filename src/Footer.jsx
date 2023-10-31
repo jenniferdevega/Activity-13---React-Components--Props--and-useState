@@ -1,11 +1,12 @@
 function Footer({copyright}) {
 
     return(
-      <footer className="container-fluid badge bg-primary text-center fs-6 mt-3">
-       {copyright}
+      <footer>
+        <h3 className="container-fluid bg-primary text-center position-absolute bottom-0 badge mt-auto">
+        {copyright}
+        </h3>
       </footer>
     )
-
 }
 
 export default Footer;

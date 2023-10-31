@@ -1,28 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:wght@300;400&display=swap');
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f7f7f7;
-  overflow-x: hidden;
-  min-height: 100vh;
-  position: relative;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
